@@ -42,7 +42,7 @@ class _MainLayoutState extends State<MainLayout> {
       case 'Mails':
         return const Center(child: Text("Mails Page"));
       case 'History':
-        return const CRMHistoryPage();
+        return const HistoryPage();
       case 'Reports':
         return const Center(child: Text("Reports Page"));
       case 'Settings':
