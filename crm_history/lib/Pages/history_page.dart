@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CRMHistoryPage extends StatelessWidget {
-  const CRMHistoryPage({super.key});
+class HistoryPage extends StatelessWidget {
+  const HistoryPage({super.key});
 
   final List<String> historyTexts = const [
     'Lead is created by user chandan@heartratehealthcare.com , Customer STEVEN BARCUS',
