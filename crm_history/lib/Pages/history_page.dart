@@ -5,10 +5,12 @@ class HistoryPage extends StatelessWidget {
 
   final List<String> historyTexts = const [
     'Lead is created by user chandan@heartratehealthcare.com , Customer STEVEN BARCUS',
-    'Mail sent to user ankit@hrservices.com , Subject: Follow-up',
-    'New customer added: Ritika Sharma',
-    'Lead status updated for manhar@clients.com , Status: Interested',
-    'Reminder set for call with Anand tomorrow at 3 PM',
+    'Lead is created by user chandan@heartratehealthcare.com , Customer JOSEPH AMLEY',
+    'Lead is created by user chandan@heartratehealthcare.com , Customer LEONARD J HARRIS',
+    'Lead is created by user chandan@heartratehealthcare.com , Customer CAROL L HENSLEY',
+    'Lead is created by user chandan@heartratehealthcare.com , Customer ROBERT W HOLLEY',
+    'Lead is created by user chandan@heartratehealthcare.com , Customer JOHN WALKER',
+    'Lead is created by user chandan@heartratehealthcare.com , Customer RDJ',
   ];
 
   @override
@@ -45,7 +47,7 @@ class HistoryPage extends StatelessWidget {
             // list cards
             Expanded(
               child: Container(
-                margin: const EdgeInsets.only(bottom: 0),
+                margin: const EdgeInsets.only(bottom: 20),
                 padding: const EdgeInsets.all(30),
                 decoration: BoxDecoration(
                   color: isBlue
