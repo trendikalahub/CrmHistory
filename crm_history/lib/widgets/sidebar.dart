@@ -62,12 +62,12 @@ class _SidebarState extends State<Sidebar> {
               ),
             ),
             const SizedBox(height: 8),
-            buildMenuItem(Icons.dashboard, "Dashboard"),
-            buildMenuItem(Icons.person, "Customer"),
-            buildMenuItem(Icons.mail, "Mails"),
-            buildMenuItem(Icons.history, "History", isHighlighted: true),
-            buildMenuItem(Icons.insert_chart, "Reports"),
-            buildMenuItem(Icons.settings, "Settings"),
+            MenuItem(Icons.person, "Customer"),
+            MenuItem(Icons.dashboard, "Dashboard"),
+            MenuItem(Icons.mail, "Mails"),
+            MenuItem(Icons.history, "History", isHighlighted: true),
+            MenuItem(Icons.insert_chart, "Reports"),
+            MenuItem(Icons.settings, "Settings"),
             const Spacer(),
             Padding(
               padding: const EdgeInsets.only(bottom: 20),
@@ -93,8 +93,7 @@ class _SidebarState extends State<Sidebar> {
     );
   }
 
-  Widget buildMenuItem(IconData icon, String title,
-      {bool isHighlighted = false}) {
+  Widget MenuItem(IconData icon, String title, {bool isHighlighted = false}) {
     final bool selected = widget.selectedMenu == title;
 
     return Column(
